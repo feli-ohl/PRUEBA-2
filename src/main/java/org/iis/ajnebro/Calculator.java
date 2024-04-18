@@ -53,4 +53,18 @@ public class Calculator {
     }
     return number1 / number2;
   }
+
+  /**
+   * Returns the square root of a number.
+   * 
+   * @param number The number whose root we are calculating.
+   * @return The square root of number.
+   * @throws IllegalArgumentException if number is negative.
+   */
+  public double squareRoot(double number) {
+    if (number < 0) {
+      throw new IllegalArgumentException("Cannot compute the square root of a negative number");
+    }
+    return Math.sqrt(number);
+  }
 }
